@@ -1,0 +1,19 @@
+{
+    "name": "Kitchen Sink",
+    "description": "Whatever I want",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["<all_urls>"]
+    }], 
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "incognito": "split",
+    "permissions": [
+        "activeTab"
+    ]
+  }
